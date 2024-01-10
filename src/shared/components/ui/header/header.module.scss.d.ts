@@ -1,5 +1,4 @@
 export declare const areaMenu: string;
-export declare const buttonLink: string;
 export declare const container: string;
 export declare const filterBlur: string;
 export declare const link: string;

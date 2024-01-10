@@ -39,15 +39,16 @@
     transition: 0.3s;
   }
 
-}
+  &  > a {
+    margin-left: 30px;
 
-.buttonLink{
-  margin-left: 30px;
-
-  @include mobile-l{
-    display: none;
+    @include mobile-l{
+      display: none;
+    }
   }
+
 }
+
 
 .link {
   text-decoration: none;

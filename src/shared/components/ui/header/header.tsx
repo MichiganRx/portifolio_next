@@ -10,8 +10,6 @@ import Button from '../button/button';
 
 import styles from './header.module.scss';
 
-import LogoHeader from '@/shared/assets/logo.svg';
-
 export interface NavProps {
   id: number;
   label: string;
@@ -37,8 +35,10 @@ const Header = () => {
   return (
     <header className={styles.container}>
       <Image
-        src={LogoHeader}
+        src="/logo.svg"
         alt="Logo da empresa"
+        width={50}
+        height={50}
         className={styles.logoCompany}
       />
       <nav className={styles.areaMenu}>
@@ -51,7 +51,7 @@ const Header = () => {
             </li>
           ))}
         </ul>
-        <Button variant="primary" asChild className={styles.buttonLink}>
+        <Button variant="primary" asChild>
           <Link href="/contato">{link3}</Link>
         </Button>
         <SelectDemo />
