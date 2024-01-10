@@ -1,0 +1,55 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizelegibility;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  max-width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth
+}
+
+a{
+  text-decoration: none;
+}
+
+body::-webkit-scrollbar {
+  width: 20px;
+}
+
+body::-webkit-scrollbar-track {
+  background: rgb(33, 33, 33);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--colors-primary);
+  border-radius: 20px;
+  border: 6px solid rgb(33, 33, 33);
+}
+
+:root {
+  --neutral-dark: #151515;
+  --neutral-mid: #51544e;
+  --neutral-light: #ffffff;
+  --colors-primary: #0096ff;
+  --primary-01: #e5f4ff;
+  --primary-02: #b7e1ff;
+  --primary-03: #8aceff;
+  --primary-04: #5cbcff;
+  --primary-05: #2ea9ff;
+  --primary-06: #0096ff;
+  --primary-07: #007ed6;
+  --primary-08: #0066ad;
+  --primary-09: #004e85;
+  --primary-10: #00365c;
+}
