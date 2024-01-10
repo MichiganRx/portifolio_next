@@ -1,0 +1,19 @@
+@forward "./mixin";
+
+$padding-desktop: 48px clamp(10px, 8.3vw, 80px);
+
+@mixin spacing-header(){
+  padding: clamp(10px, 2vh, 20px) clamp(10px, 7vw, 80px);
+}
+
+@mixin centered-pages() {
+  display:flex;
+  align-items: center;
+  padding: $padding-desktop;
+}
+
+@mixin start-pages() {
+  display:flex;
+  flex-direction: column;
+  padding: $padding-desktop;
+}

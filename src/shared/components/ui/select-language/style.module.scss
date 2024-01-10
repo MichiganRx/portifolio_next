@@ -1,0 +1,75 @@
+@use "abstracts" as *;
+
+.selectTrigger {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+  outline: none;
+  height: 39px;
+  width: 64px;
+  border-radius: 10px;
+  background: $color-primary-10;
+  padding: 8px;
+  margin-left: 20px;
+  cursor: pointer;
+
+  &:hover{
+    background: linear-gradient(94deg, $color-primary-10 0%, $color-primary 100%);
+    box-shadow: 0px 0px 16px 4px $color-primary-10;
+  }
+}
+
+.selectIcon {
+  margin-left: 10px;
+  color: $color-neutral-light;
+}
+
+.selectContent {
+  overflow: hidden;
+  border: none;
+  outline: none;
+  width: 64px;
+  height: auto;
+  border-radius: 0 0 8px 8px;
+  background: $color-primary-10;
+  padding: 0 6px;
+  margin-top: -10px;
+  z-index: 2;
+  position: relative;
+}
+
+.selectSeparator {
+  height: 1px;
+  background-color: $color-neutral-light;
+  margin-top: 10px;
+}
+
+.areaImg {
+  margin-left: 3px;
+}
+
+.image {
+  border-radius: 6px;
+  margin-top: 5px;
+
+  @include mobile-l{
+    max-width: 30px;
+    max-height: 22px;
+  }
+}
+
+.selectItem {
+  padding: 5px 0;
+  padding-right: 25px;
+  width: 100%;
+
+  &[data-disabled]{
+    pointer-events: none;
+  }
+
+  &[data-highlighted]{
+    outline: none;
+    cursor: pointer;
+  }
+}
