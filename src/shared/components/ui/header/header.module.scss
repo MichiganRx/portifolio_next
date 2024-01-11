@@ -8,6 +8,7 @@
   width: 100vw;
   z-index: 10;
   background-color: $color-neutral-dark-opacity-8;
+  backdrop-filter: blur(7px);
 
   @include spacing-header;
 }
@@ -15,10 +16,6 @@
 .logoCompany{
   width: clamp(80px, 20vw, 150px);
   height: clamp(30px, 5vw, 50px);
-}
-
-.filterBlur {
-  backdrop-filter: blur(7px);
 }
 
 .areaMenu {
@@ -46,9 +43,7 @@
       display: none;
     }
   }
-
 }
-
 
 .link {
   text-decoration: none;

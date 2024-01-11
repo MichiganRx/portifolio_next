@@ -1,19 +1,31 @@
-@forward "./mixin";
+@use "./mixin" as *;
 
-$padding-desktop: 48px clamp(10px, 8.3vw, 80px);
+$padding-desktop: 80px clamp(80px, 9vw, 160px);
+$padding-desktop-l: clamp(10px, 8.3vw, 80px);
 
 @mixin spacing-header(){
-  padding: clamp(10px, 2vh, 20px) clamp(10px, 7vw, 80px);
+  padding: clamp(10px, 2vh, 20px) clamp(80px, 9vw, 160px);
+
+  @include desktop-l{
+    padding: clamp(10px, 2vh, 20px) clamp(10px, 8.3vw, 80px);
+  }
 }
 
 @mixin centered-pages() {
   display:flex;
   align-items: center;
   padding: $padding-desktop;
+
+  @include desktop-l{
+    padding: $padding-desktop-l;
+  }
 }
 
 @mixin start-pages() {
   display:flex;
-  flex-direction: column;
   padding: $padding-desktop;
+
+  @include desktop-l{
+    padding: $padding-desktop-l;
+  }
 }

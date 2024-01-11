@@ -1,0 +1,105 @@
+@use "abstracts" as *;
+
+.footerTop{
+  background: url(../../../../../public/bg-footer.svg);
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  flex-direction: column;
+  color: $color-neutral-light;
+  border-top: 2px solid $color-primary;
+  border-bottom: 2px solid $color-primary;
+
+  @include font-title;
+  @include start-pages;
+
+  @include mobile-l{
+    background: url(../../../../../public/bg-footer-responsive.svg);
+  }
+
+  & h2{
+    margin-bottom: 10px;
+  }
+
+  & a{
+    margin-top: 24px;
+    width: fit-content;
+    color: $color-neutral-dark;
+
+    @include font-button;
+  }
+
+}
+
+.footerBottom{
+  color: $color-neutral-light;
+  justify-content: space-between;
+  
+  @include start-pages;
+
+  @include mobile-l{
+    flex-wrap: wrap
+  }
+
+
+  h3{
+    @include font-subtitle;
+  }
+
+  h4, 
+  li,
+  a{
+    color: $color-neutral-light-opacity-7;
+    margin-top: 24px;  
+    
+    @include font-description;
+  }
+
+  div{
+    height: fit-content;
+    min-width: 200px;
+
+    @include mobile-l{
+      min-width: fit-content;
+    }
+  }
+
+  .contact{
+    margin-right: 80px;
+  
+    @include mobile-l{
+      margin-right: 0;
+    }
+  
+    a{
+      margin-bottom: 20px;
+      color: $color-neutral-dark;
+      
+      @include font-button;
+    }
+  }
+  
+  .address{
+    max-width: 650px;
+  
+    @include mobile-l{
+      margin-top: 20px;
+
+      h3{
+        margin-top: 20px; 
+      }
+    }
+
+  }
+}
+
+.copyright{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $color-neutral-mid-opacity-5;
+  color: $color-neutral-light;
+
+  @include spacing-header;
+  @include font-copyright;
+}
