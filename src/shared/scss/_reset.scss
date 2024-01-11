@@ -15,7 +15,7 @@ html {
 
 body {
   font-family: var(--font-poppins);
-  background: #000;
+  background: $color-neutral-dark;
   -webkit-font-smoothing: antialiased;
 
   overflow-x: hidden;
@@ -69,9 +69,6 @@ button{
 
 ::-webkit-scrollbar-thumb {
   border-radius: 1.6rem;
-}
-
-::-webkit-scrollbar-thumb:hover {
 }
 
 ::-webkit-scrollbar-track-piece {

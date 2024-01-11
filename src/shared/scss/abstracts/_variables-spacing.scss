@@ -1,7 +1,7 @@
 @use "./mixin" as *;
 
 $padding-desktop: 80px clamp(80px, 9vw, 160px);
-$padding-desktop-l: clamp(10px, 8.3vw, 80px);
+$padding-desktop-l: 50px clamp(10px, 8.3vw, 80px);
 
 @mixin spacing-header(){
   padding: clamp(10px, 2vh, 20px) clamp(80px, 9vw, 160px);
@@ -14,6 +14,8 @@ $padding-desktop-l: clamp(10px, 8.3vw, 80px);
 @mixin centered-pages() {
   display:flex;
   align-items: center;
+  flex-direction: column;
+  justify-content: center;
   padding: $padding-desktop;
 
   @include desktop-l{

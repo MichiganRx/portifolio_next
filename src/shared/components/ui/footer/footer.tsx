@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -59,15 +60,15 @@ export const Footer = () => {
   return (
     <footer>
       <div className={styles.footerTop}>
-        <h2>{titlepart1}</h2>
-        <h2>{titlepart2}</h2>
+        <span>{titlepart1}</span>
+        <span>{titlepart2}</span>
         <Button variant="tertiary" asChild>
           <Link href="./">{button}</Link>
         </Button>
       </div>
       <div className={styles.footerBottom}>
-        <div>
-          <h3>{title2}</h3>
+        <div className={styles.mapSite}>
+          <span>{title2}</span>
           <ul>
             {navBar.map(({ id, label, link }: NavProps) => (
               <li key={id}>
@@ -77,7 +78,7 @@ export const Footer = () => {
           </ul>
         </div>
         <div className={styles.contact}>
-          <h3>{title3}</h3>
+          <span>{title3}</span>
           <Button variant="tertiary" asChild>
             <Link href="./">
               <Image
@@ -102,7 +103,7 @@ export const Footer = () => {
           </Button>
         </div>
         <div className={styles.address}>
-          <h3>{title4}</h3>
+          <span>{title4}</span>
           <h4>{end1}</h4>
           <h4>{end2}</h4>
           <h4>{end3}</h4>

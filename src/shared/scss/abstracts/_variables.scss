@@ -11,13 +11,30 @@ $color-primary: #65b741;
 $color-primary-10: #245111;
 
 @mixin font-title-main() {
-	font-size: 40px;
-  font-weight: 600;
+	font-size: 44px;
+  font-weight: 500;
+
+  @include mobile-l{
+    font-size: 26px;
+  }
 }
 
 @mixin font-animation-number() {
-  font-size: 26px;
-  font-weight: 400;
+  font-size: 24px;
+  font-weight: 500;
+
+  @include mobile-l{
+    font-size: 18px;
+  }
+}
+
+@mixin font-animation-text() {
+  font-size: 24px;
+  font-weight: 200;
+
+  @include mobile-l{
+    font-size: 14px;
+  }
 }
 
 @mixin font-title() {
@@ -31,7 +48,7 @@ $color-primary-10: #245111;
 
 @mixin font-subtitle() {
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 400;
 
   @include mobile-l{
     font-size: 16px;
