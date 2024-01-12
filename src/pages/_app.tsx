@@ -2,7 +2,6 @@ import { Roboto } from 'next/font/google';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
 
-import '@/shared/styles/globals.css';
 import '@/shared/scss/main.scss';
 
 import { GoogleAnalytics } from '@/shared/components/google-analytics';

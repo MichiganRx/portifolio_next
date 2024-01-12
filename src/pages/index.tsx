@@ -1,5 +1,6 @@
 import { Header } from '@/shared/components/ui/header/header';
 import { MainSection } from '@/shared/components/home-sections/main';
+import { ServicesProvided } from '@/shared/components/home-sections/services-provided';
 import { Footer } from '@/shared/components/ui/footer/footer';
 import { SEO } from '@/shared/components/seo';
 
@@ -12,6 +13,7 @@ export default function Home() {
       />
       <Header />
       <MainSection />
+      <ServicesProvided />
       <Footer />
     </>
   );
