@@ -1,7 +1,7 @@
 @use "abstracts" as *;
 
 .footerTop{
-  background: url(../../../../../public/bg-footer.svg);
+  background: url(/public/bg-footer.svg);
   background-size: cover !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
