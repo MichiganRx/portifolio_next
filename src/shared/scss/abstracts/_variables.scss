@@ -6,7 +6,8 @@ $color-neutral-dark-opacity-7: rgba(21, 21, 21, 0.7);
 $color-neutral-mid: #51544e;
 $color-neutral-mid-opacity-5: rgba(33, 33, 33, 0.5);
 $color-neutral-light: #ffffff;
-$color-neutral-light-opacity-7: rgba(255, 255, 255, 0.70);;
+$color-neutral-light-opacity-9: rgba(255, 255, 255, 0.9);
+$color-neutral-light-opacity-7: rgba(255, 255, 255, 0.70);
 $color-primary: #65b741;
 $color-primary-10: #245111;
 $color-secondary-10: #2C4025;
@@ -63,6 +64,15 @@ $color-secondary-10: #2C4025;
   @include mobile-l{
     font-size: 16px;
     font-weight: 500;
+  }
+}
+
+@mixin font-subtitle-l() {
+  font-size: 20px;
+  font-weight: 600;
+
+  @include mobile-l{
+    font-size: 16px;
   }
 }
 

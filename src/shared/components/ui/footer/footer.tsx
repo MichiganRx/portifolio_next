@@ -94,7 +94,7 @@ export const Footer = () => {
             <Link href="./">
               <Image
                 src="/icon-tel-black.svg"
-                alt="Entrat em contato por E-mail"
+                alt="Entrat em contato por Telefone"
                 width={24}
                 height={16}
               />

@@ -19,8 +19,12 @@
 
   & span{
     margin-bottom: 10px;
-
+    
     @include font-animation-number;
+
+    @include mobile-l{
+      margin-bottom: 0;
+    }
   }
 
   & a{
@@ -29,8 +33,11 @@
     color: $color-neutral-dark;
 
     @include font-button;
-  }
 
+    @include mobile-l{
+      margin-top: 15px;
+    }
+  } 
 }
 
 .footerBottom{

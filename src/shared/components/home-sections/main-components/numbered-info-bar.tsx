@@ -13,22 +13,22 @@ export const NumberedInfoBar = () => {
   } = useLocale(mainHomeLocale);
   return (
     <div className={style.container}>
-      <AnimatedNumber initialValue={0} speed={18} nome={NumberedInfoBar1} />
+      <AnimatedNumber initialValue={0} speed={8} nome={NumberedInfoBar1} />
       <AnimatedNumber
         initialValue={0}
-        speed={100}
+        speed={70}
         mais={true}
         nome={NumberedInfoBar2}
       />
       <AnimatedNumber
         initialValue={0}
-        speed={250}
+        speed={100}
         mais={true}
         nome={NumberedInfoBar3}
       />
       <AnimatedNumber
         initialValue={0}
-        speed={400}
+        speed={180}
         mais={true}
         nome={NumberedInfoBar4}
       />

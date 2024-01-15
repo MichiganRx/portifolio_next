@@ -1,0 +1,83 @@
+@use "abstracts" as *;
+
+.container {
+  display: flex;
+  width: 100%;
+  margin-bottom: 40px;
+
+  @include mobile-l{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+}
+
+.areaText {
+  min-width: 300px;
+  display: flex;
+  padding: 24px 0;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: 30px 0px 0px 30px;
+  border-right: 3px solid var(--Color-Primary, #65B741);
+  background: linear-gradient(270deg, #65B741 0%, rgba(101, 183, 65, 0.50) 100%);
+
+  @include mobile-l{
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0;
+    border-radius: 24px 24px 0px 0px;
+  }
+
+  & img{
+    width: 70px;
+    height: 70px;
+
+    @include mobile-l{
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  & > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include mobile-l{
+      text-align: center;
+    }
+
+    & span{
+      color: $color-neutral-dark;
+
+      @include font-subtitle-l;
+    }
+  
+    & p{
+      color: $color-neutral-dark;
+  
+      @include font-subtitle;
+    }
+  }
+}
+
+.boxDescription{
+  display: flex;
+  width: 100%;
+  padding: 24px;
+  align-items: center;
+  border-radius: 0px 30px 30px 0px;
+  background: rgba(36, 81, 17, 0.20);
+
+  @include mobile-l{
+    border-radius: 0px 0px 24px 24px;
+  }
+
+  & span{
+    color: $color-neutral-light-opacity-9;
+    @include font-paragraph;
+  }
+}
+
