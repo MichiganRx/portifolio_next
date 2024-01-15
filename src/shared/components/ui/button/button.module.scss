@@ -7,6 +7,7 @@
   gap: 4px;
   border-radius: 10px;
   cursor: pointer;
+  white-space:nowrap;
   
   @include font-button;
 }
@@ -36,11 +37,24 @@
 
 .tertiary{
   padding: 10px;
-  background-color: $color-primary-10;
+  background-color: $color-primary;
 
   &:hover{
     background: linear-gradient(94deg, $color-primary-10 0%, $color-primary 100%);
     box-shadow: 0px 0px 16px 4px $color-primary-10;
+  }
+}
+
+.quaternary{
+  padding: 12px;
+  border: 2px solid $color-primary;
+  color: $color-primary;
+
+  &:hover{
+    border: 2px solid $color-primary;
+    background: $color-neutral-dark;
+    box-shadow: 0px 0px 16px 4px $color-primary-10;
+    color: $color-primary;
   }
 }
 

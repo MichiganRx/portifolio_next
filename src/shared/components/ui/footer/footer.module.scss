@@ -1,0 +1,101 @@
+@use "abstracts" as *;
+
+.footerTop{
+  background: url(/public/bg-footer.svg);
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  flex-direction: column;
+  color: $color-neutral-light;
+  border-top: 2px solid $color-primary;
+  border-bottom: 2px solid $color-primary;
+
+  @include font-title;
+  @include start-pages;
+
+  @include mobile-l{
+    background: url(/bg-footer-responsive.svg);
+  }
+
+  & span{
+    margin-bottom: 10px;
+    
+    @include font-animation-number;
+
+    @include mobile-l{
+      margin-bottom: 0;
+    }
+  }
+
+  & a{
+    margin-top: 24px;
+    width: fit-content;
+    color: $color-neutral-dark;
+
+    @include font-button;
+
+    @include mobile-l{
+      margin-top: 15px;
+    }
+  } 
+}
+
+.footerBottom{
+  color: $color-neutral-light;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  
+  @include start-pages;
+
+  span{
+    @include font-subtitle;
+  }
+
+  h4, 
+  li,
+  a{
+    color: $color-neutral-light-opacity-7;
+    margin-top: 24px;  
+    
+    @include font-description;
+  }
+
+  div{
+    height: fit-content;
+    margin-right: 40px;
+
+    @include mobile-l{
+      margin-right: 0;
+      min-width: fit-content;
+    }
+  }
+
+  .mapSite{
+    margin-bottom: 40px;
+  }
+
+  .contact{
+    a{
+      margin-bottom: 20px;
+      color: $color-neutral-dark;
+      
+      @include font-button;
+    }
+  }
+  
+  .address{
+    max-width: 650px;
+    margin-right: 0;
+  }
+}
+
+.copyright{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $color-neutral-mid-opacity-5;
+  color: $color-neutral-light;
+
+  @include spacing-header;
+  @include font-copyright;
+}

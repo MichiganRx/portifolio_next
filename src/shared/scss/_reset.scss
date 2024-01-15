@@ -15,10 +15,25 @@ html {
 
 body {
   font-family: var(--font-poppins);
-  background: #000;
+  background: $color-neutral-dark;
   -webkit-font-smoothing: antialiased;
 
   overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  width: 20px;
+  background: $color-neutral-dark;
+}
+
+body::-webkit-scrollbar-track {
+  background: $color-neutral-dark;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: $color-secondary-10;
+  border-radius: 20px;
+  border: 6px solid $color-neutral-dark;
 }
 
 h1,
@@ -26,7 +41,9 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
+  margin: 0;
   font-weight: 500;
 }
 
@@ -69,9 +86,6 @@ button{
 
 ::-webkit-scrollbar-thumb {
   border-radius: 1.6rem;
-}
-
-::-webkit-scrollbar-thumb:hover {
 }
 
 ::-webkit-scrollbar-track-piece {

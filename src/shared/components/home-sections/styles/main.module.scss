@@ -1,0 +1,68 @@
+@use "abstracts" as *;
+
+$height: calc(100vh - 100px);
+$min-heigth: 700px;
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: $height;
+  min-height: $min-heigth;
+  background: url(/logo-bg-main-home.png) !important;
+  background-size: 85% !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-color: $color-neutral-dark-opacity-7 !important;
+}
+
+.containerVideo{
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: $height;
+  min-height: $min-heigth;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  background-color: rgb(0, 0, 0);
+
+  video{
+    width: 120%;
+    min-width: 1400px;
+    margin-top: -100px;
+    margin-left: 300px;
+    height: 1000px;
+
+    @include mobile-l{
+      margin-left: -200px;
+    }
+  }
+}
+
+.text{
+  text-align: center;
+  width: 100%;
+  height: 100%;
+
+  @include centered-pages;
+
+  h1,h2{
+    color: $color-neutral-light;
+
+    @include font-title-main;
+  }
+
+  h2{
+    color: $color-primary;
+    margin-bottom: 16px;
+  }
+
+  p{
+    max-width: 650px;
+    color: $color-neutral-light-opacity-7;
+
+    @include font-subtitle;
+  }
+}

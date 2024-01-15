@@ -6,7 +6,7 @@ import { cn } from '@/shared/helpers/shadcn-utils';
 import style from './button.module.scss';
 
 interface ButtonProps extends ComponentPropsWithoutRef<'button'> {
-  variant?: 'default' | 'primary' | 'secondary';
+  variant?: 'default' | 'primary' | 'secondary' | 'tertiary' | 'quaternary';
   children: ReactNode;
   className?: string;
   href?: string;
@@ -27,6 +27,8 @@ export default function Button({
       default: 'default-button',
       primary: 'primary',
       secondary: 'secondary',
+      tertiary: 'tertiary',
+      quaternary: 'quaternary',
     }[variant],
     className
   );
