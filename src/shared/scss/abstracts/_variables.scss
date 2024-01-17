@@ -84,10 +84,27 @@ $color-secondary-10: #2C4025;
     font-size: 16px;
   }
 }
+@mixin font-paragraph-l() {
+  font-size: 18px;
+  font-weight: 500;
+
+  @include mobile-l{
+    font-size: 16px;
+  }
+}
 
 @mixin font-description() {
   font-size: 16px;
   font-weight: 400;
+
+  @include mobile-l{
+    font-size: 14px;
+  }
+}
+
+@mixin font-description-l() {
+  font-size: 16px;
+  font-weight: 500;
 
   @include mobile-l{
     font-size: 14px;
