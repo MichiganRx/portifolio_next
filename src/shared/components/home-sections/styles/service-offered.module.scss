@@ -38,7 +38,6 @@
   @include mobile-l{
     padding: 0;
     overflow: hidden;
-    gap: 5px;
   }
 
   & > div{
@@ -49,7 +48,15 @@
     & > div{
       display: flex;
       justify-content: space-between;
-      gap: 15px;
+
+      @include padding-left-right;
+
+      @include mobile-l{
+        padding-right: 0;
+        width: 250%;
+        gap: 30px;
+        justify-content: flex-start;
+      }
     }
   }
 }
