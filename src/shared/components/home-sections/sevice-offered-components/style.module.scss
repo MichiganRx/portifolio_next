@@ -9,11 +9,12 @@
   border-radius: 24px;
   border: 1px solid $color-primary;
   background: $color-neutral-dark;
-  width: 30%;
-  height: fit-content;
+  width: 32%;
   color: $color-neutral-light;
+  scale: 0.9;
 
   @include mobile-l{
+    width: 90%;
     padding: 20px;
   }
 
@@ -24,6 +25,7 @@
   & > p{
     margin-top: 25px;
     color: $color-neutral-light-opacity-7;
+    text-align: start;
 
     @include font-paragraph;
     @include mobile-l{
@@ -70,9 +72,10 @@
     }
   }
 
-  &:hover{
+  &:nth-child(2){
     background: $color-primary;
     color: $color-neutral-dark;
+    scale: 1;
 
     & span{
       font-weight: 600;

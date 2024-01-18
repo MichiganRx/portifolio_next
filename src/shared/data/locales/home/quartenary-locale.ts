@@ -22,8 +22,8 @@ export const Acting = [
 
     'pt-br': {
       image: '/body-shop.svg',
-      alt: 'Squad',
-      title: 'Squad',
+      alt: 'Body Shop',
+      title: 'Body Shop',
       subtitle: 'Outsourcing',
       description: `Um time externo de alto rendimento e custo-benefício, apoiado por supervisão rigorosa e capacitação contínua, garantindo entregas de alto padrão.`,
     },

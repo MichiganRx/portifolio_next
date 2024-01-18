@@ -48,14 +48,13 @@
     & > div{
       display: flex;
       justify-content: space-between;
-
-      @include padding-left-right;
+      align-items: stretch;
 
       @include mobile-l{
-        padding-right: 0;
         width: 250%;
-        gap: 30px;
-        justify-content: flex-start;
+        gap: 10px;
+
+        @include padding-left-right;
       }
     }
   }
