@@ -43,17 +43,17 @@ export const Footer = () => {
     {
       id: 2,
       label: link2,
-      link: '/',
+      link: '#solucoes',
     },
     {
       id: 3,
       label: link3,
-      link: '/',
+      link: '#servicos',
     },
     {
       id: 4,
       label: link4,
-      link: '/',
+      link: '/contato',
     },
   ];
 
@@ -63,7 +63,7 @@ export const Footer = () => {
         <span>{titlepart1}</span>
         <span>{titlepart2}</span>
         <Button variant="tertiary" asChild>
-          <Link href="./">{button}</Link>
+          <Link href="./contato">{button}</Link>
         </Button>
       </div>
       <div className={styles.footerBottom}>
@@ -80,7 +80,7 @@ export const Footer = () => {
         <div className={styles.contact}>
           <span>{title3}</span>
           <Button variant="tertiary" asChild>
-            <Link href="./">
+            <Link href="./contato">
               <Image
                 src="/icon-email-black.svg"
                 alt="Entrat em contato por E-mail"
@@ -91,7 +91,7 @@ export const Footer = () => {
             </Link>
           </Button>
           <Button variant="tertiary" asChild>
-            <Link href="./">
+            <Link href="./contato">
               <Image
                 src="/icon-tel-black.svg"
                 alt="Entrat em contato por Telefone"

@@ -12,7 +12,7 @@ export const QuartenarySection = () => {
   const { title, description } = useLocale(quartenaryLocale);
   const localeSelected = useLocaleSelected();
   return (
-    <section className={styles.container} id="services">
+    <section className={styles.container}>
       <span>{title}</span>
       <p>{description}</p>
       <div>

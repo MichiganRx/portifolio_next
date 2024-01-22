@@ -23,12 +23,12 @@ const Header = () => {
     {
       id: 1,
       label: link1,
-      link: '/solucoes',
+      link: './#solucoes',
     },
     {
       id: 2,
       label: link2,
-      link: '/servicos',
+      link: './#servicos',
     },
   ];
 

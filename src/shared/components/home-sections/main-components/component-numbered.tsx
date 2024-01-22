@@ -49,7 +49,7 @@ const AnimatedNumber = ({
   }, [initialValue, speed, updateInterval]);
 
   return (
-    <div className={style.alignmentNumberCounter}>
+    <div className={style.alignmentNumberCounter} id="solucoes">
       <div>{mais ? `+${Math.round(count)}` : Math.round(count)}</div>
       {nome}
     </div>

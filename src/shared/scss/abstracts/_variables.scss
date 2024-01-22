@@ -8,9 +8,12 @@ $color-neutral-mid-opacity-5: rgba(33, 33, 33, 0.5);
 $color-neutral-light: #ffffff;
 $color-neutral-light-opacity-9: rgba(255, 255, 255, 0.9);
 $color-neutral-light-opacity-7: rgba(255, 255, 255, 0.70);
+$color-neutral-light-opacity-6: rgba(255, 255, 255, 0.6);
 $color-primary: #65b741;
+$color-primary-2: #CAFFB2;
 $color-primary-10: #245111;
 $color-secondary-10: #2C4025;
+
 
 $base-font-size: 16px;
 
@@ -23,12 +26,30 @@ $base-font-size: 16px;
   }
 }
 
+@mixin font-title-main-l() {
+  font-size: 1.7rem;
+  font-weight: 400;
+
+  @include mobile-l {
+    font-size: 1.3rem;
+  }
+}
+
 @mixin font-title() {
   font-size: 1.375rem;
   font-weight: 500;
 
   @include mobile-l {
     font-size: 1.25rem;
+  }
+}
+
+@mixin font-title-l() {
+  font-size: 1.2rem;
+  font-weight: 300;
+
+  @include mobile-l {
+    font-size: 1rem;
   }
 }
 

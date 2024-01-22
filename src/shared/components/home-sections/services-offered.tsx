@@ -14,6 +14,7 @@ export const ServicesOffered = () => {
 
   return (
     <section className={style.container}>
+      <div id="servicos" className={style.ancora}></div>
       <div className={style.containerText}>
         <h2>{title}</h2>
         <p>{paragraph}</p>
