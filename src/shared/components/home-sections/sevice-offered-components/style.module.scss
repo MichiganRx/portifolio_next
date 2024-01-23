@@ -1,0 +1,102 @@
+@use "abstracts" as *;
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  border-radius: 24px;
+  border: 1px solid $color-primary;
+  background: $color-neutral-dark;
+  width: 32%;
+  color: $color-neutral-light;
+  scale: 0.9;
+
+  @include mobile-l{
+    width: 90%;
+    padding: 20px;
+  }
+
+  & span{
+    @include font-paragraph-l;
+  }
+
+  & > p{
+    margin-top: 25px;
+    color: $color-neutral-light-opacity-7;
+    text-align: start;
+
+    @include font-paragraph;
+    @include mobile-l{
+      margin-top: 15px;
+    }
+  }
+
+  & > div{
+    width: 90px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 6px solid $color-primary;
+    margin-bottom: 20px;
+
+    @include mobile-l{
+      width: 70px;
+      height: 70px;
+      margin-bottom: 10px;
+    }
+
+    & > div{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 60px;
+      height: 60px;
+      background-color: $color-primary;
+      border-radius: 50%;
+
+      @include mobile-l{
+        width: 40px;
+        height: 40px;
+      }
+
+      & svg{
+        @include mobile-l{
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+  }
+
+  &:nth-child(2){
+    background: $color-primary;
+    color: $color-neutral-dark;
+    scale: 1;
+
+    & span{
+      font-weight: 600;
+    }  
+
+    & p{
+      color: $color-neutral-dark; 
+    }
+
+    & > div{
+      border: 10px solid black;
+  
+      & > div{
+        background-color: black;
+
+        & svg{
+          & path{
+            fill: #65b741;
+          }
+        }
+      }
+    }
+  }
+}

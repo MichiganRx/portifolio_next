@@ -8,112 +8,159 @@ $color-neutral-mid-opacity-5: rgba(33, 33, 33, 0.5);
 $color-neutral-light: #ffffff;
 $color-neutral-light-opacity-9: rgba(255, 255, 255, 0.9);
 $color-neutral-light-opacity-7: rgba(255, 255, 255, 0.70);
+$color-neutral-light-opacity-6: rgba(255, 255, 255, 0.6);
 $color-primary: #65b741;
+$color-primary-2: #CAFFB2;
 $color-primary-10: #245111;
 $color-secondary-10: #2C4025;
 
+
+$base-font-size: 16px;
+
 @mixin font-title-main() {
-	font-size: 44px;
+  font-size: 2.5rem;
   font-weight: 500;
 
-  @include mobile-l{
-    font-size: 26px;
+  @include mobile-l {
+    font-size: 1.625rem;
+  }
+}
+
+@mixin font-title-main-l() {
+  font-size: 1.7rem;
+  font-weight: 400;
+
+  @include mobile-l {
+    font-size: 1.3rem;
   }
 }
 
 @mixin font-title() {
-	font-size: 26px;
-  font-weight: 400;
+  font-size: 1.375rem;
+  font-weight: 500;
 
-  @include mobile-l{
-    font-size: 22px;
+  @include mobile-l {
+    font-size: 1.25rem;
+  }
+}
+
+@mixin font-title-l() {
+  font-size: 1.2rem;
+  font-weight: 300;
+
+  @include mobile-l {
+    font-size: 1rem;
   }
 }
 
 @mixin font-title-m() {
-	font-size: 26px;
+  font-size: 1.25rem;
   font-weight: 500;
 
-  @include mobile-l{
-    font-size: 20px;
+  @include mobile-l {
+    font-size: 1rem;
   }
 }
 
 @mixin font-animation-number() {
-  font-size: 24px;
+  font-size: 1.375rem;
   font-weight: 500;
 
-  @include mobile-l{
-    font-size: 18px;
+  @include mobile-l {
+    font-size: 1rem;
   }
 }
 
 @mixin font-animation-text() {
-  font-size: 24px;
-  font-weight: 200;
+  font-size: 1.375rem;
+  font-weight: 300;
 
-  @include mobile-l{
-    font-size: 14px;
+  @include mobile-l {
+    font-size: 0.875rem;
   }
 }
 
 @mixin font-subtitle() {
-  font-size: 20px;
+  font-size: 1rem;
   font-weight: 400;
 
-  @include mobile-l{
-    font-size: 16px;
-    font-weight: 500;
+  @include mobile-l {
+    font-size: 0.875rem;
+    font-weight: 400;
   }
 }
 
 @mixin font-subtitle-l() {
-  font-size: 20px;
+  font-size: 1rem;
   font-weight: 600;
 
-  @include mobile-l{
-    font-size: 16px;
+  @include mobile-l {
+    font-size: 0.875rem;
+  }
+}
+
+@mixin font-subtitle-m() {
+  font-size: 0.875rem;
+  font-weight: 300;
+
+  @include mobile-l {
+    font-size: 0.75rem;
   }
 }
 
 @mixin font-paragraph() {
-  font-size: 18px;
+  font-size: 1rem; 
   font-weight: 300;
 
-  @include mobile-l{
-    font-size: 16px;
+  @include mobile-l {
+    font-size: 0.875rem;
   }
 }
 
+@mixin font-paragraph-l() {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
 @mixin font-description() {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
 
-  @include mobile-l{
-    font-size: 14px;
+  @include mobile-l {
+    font-size: 0.75rem;
+  }
+}
+
+@mixin font-description-l() {
+  font-size: 0.85rem;
+  font-weight: 400;
+  
+  @include mobile-l {
+    font-size: 0.75rem;
   }
 }
 
 @mixin font-link() {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
 }
 
 @mixin font-button() {
-  font-size: 16px;
+  font-size: 0.875rem;
   font-weight: 500;
 
-  @include mobile-l{
-    font-size: 14px;
+  @include mobile-l {
+    font-size: 0.70rem;
   }
 }
 
 @mixin font-copyright() {
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 500;
 
-  @include mobile-l{
-    font-size: 12px;
+  @include mobile-l {
+    font-size: 0.75rem;
   }
 }
+
 

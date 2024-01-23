@@ -48,6 +48,7 @@
 .link {
   text-decoration: none;
   color: $color-neutral-light;
+  cursor: pointer;
 
   @include font-link;
 
