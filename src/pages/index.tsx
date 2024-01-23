@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       <SEO
-        title="B2ml Sistemas: Tecnologia desenvolvendo negócios"
+        title="Organic Soluções: Tecnologia desenvolvendo negócios"
         description="Desenvolvemos serviços para alavancar seu negócio, desde plataformas web até bancos digitais e sistemas IOT com IA's"
       />
       <Header />

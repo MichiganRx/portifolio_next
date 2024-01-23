@@ -4,10 +4,10 @@ $padding-desktop: 60px clamp(80px, 9vw, 160px);
 $padding-desktop-l: clamp(30px, 3.5vw, 50px) clamp(10px, 8.3vw, 80px);
 
 @mixin spacing-header(){
-  padding: clamp(10px, 2vh, 20px) clamp(80px, 9vw, 160px);
+  padding: clamp(10px, 1.5vh, 15px) clamp(80px, 9vw, 160px);
 
   @include desktop-l{
-    padding: clamp(10px, 2vh, 20px) clamp(10px, 8.3vw, 80px);
+    padding: clamp(10px, 1.5vh, 15px) clamp(10px, 8.3vw, 80px);
   }
 }
 

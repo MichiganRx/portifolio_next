@@ -169,9 +169,10 @@
   text-align: center;
   left: 0;
   top: 0;
-  z-index: 120;
+  z-index: 2;
   background-image: url(/bg-secondary.svg);
-  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
 
   @include padding-left-right;
 

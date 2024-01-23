@@ -8,6 +8,7 @@
   color: $color-neutral-light;
   padding: 0 20px;
   margin-bottom: 50px;
+  gap: 10px;
 
   @include mobile-l{
     margin-bottom: 20px
@@ -23,12 +24,15 @@
 .alignmentNumberCounter{
   display: flex;
   justify-content: center;
-  margin: 20px;
   flex-wrap: wrap;
 
   & > div{
     margin-right: 10px;
 
     @include font-animation-number;
+  }
+
+  @include mobile-l{
+    flex-direction: column;
   }
 }
