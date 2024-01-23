@@ -10,7 +10,7 @@
 
   @include padding-top-bottom;
 
-  @include mobile-l{
+  @include tablet{
     border-top: 10px solid $color-secondary-10;
     min-height: 740px
   }
@@ -43,7 +43,7 @@
 
   @include padding-left-right;
 
-  @include mobile-l{
+  @include tablet{
     padding: 0;
   }
 }
