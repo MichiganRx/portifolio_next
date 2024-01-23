@@ -34,13 +34,11 @@ const Header = () => {
 
   return (
     <header className={styles.container}>
-      <Image
-        src="/logo.svg"
-        alt="Logo da empresa"
-        width={50}
-        height={50}
-        className={styles.logoCompany}
-      />
+      <button className={styles.logoCompany}>
+        <Link href="./">
+          <Image src="/logo.svg" alt="Logo da empresa" width={50} height={50} />
+        </Link>
+      </button>
       <nav className={styles.areaMenu}>
         <ul>
           {navBar.map(({ id, label, link }: NavProps) => (

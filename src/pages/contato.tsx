@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <>
       <SEO
-        title="Organic - Entre em contato"
+        title="Organic Soluções - Entre em contato"
         description="Venha desenvolver seu negócio com a gente."
       />
       <Header />

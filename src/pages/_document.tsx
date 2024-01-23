@@ -15,7 +15,7 @@ export default function Document() {
         />
         <meta property="og:site_name" content="Organic" />
         <meta property="og:type" content="website" />
-        {/* <meta property="og:url" content="https://www.b2ml.com.br" /> */}
+        <meta property="og:url" content="https://www.organic.com.br" />
         <meta
           property="og:image:alt"
           content="Tecnologia desenvolvendo negócios"
@@ -43,8 +43,8 @@ export default function Document() {
           href="/favicon-16x16.png"
         />
         <link rel="manifest" href="/site.webmanifest" />
-        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000" />
-        <meta name="msapplication-TileColor" content="#ffffff" />
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+        <meta name="msapplication-TileColor" content="#2b5797" />
         <meta name="theme-color" content="#ffffff" />
       </Head>
       <body>

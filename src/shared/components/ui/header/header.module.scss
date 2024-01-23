@@ -14,8 +14,10 @@
 }
 
 .logoCompany{
-  width: clamp(80px, 20vw, 150px);
-  height: clamp(30px, 5vw, 50px);
+  & img{
+    width: clamp(80px, 20vw, 150px);
+    height: clamp(30px, 5vw, 50px);
+  }
 }
 
 .areaMenu {
