@@ -10,6 +10,8 @@
   margin-bottom: 50px;
   gap: 10px;
 
+    @include padding-left-right;
+
   @include mobile-l{
     margin-bottom: 20px
   }

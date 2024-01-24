@@ -42,7 +42,7 @@
   
   @include padding-left-right;
 
-  @include mobile-l{
+  @include tablet{
     padding: 0;
     overflow: hidden;
   }
@@ -57,11 +57,9 @@
       justify-content: space-between;
       align-items: stretch;
 
-      @include mobile-l{
+      @include tablet{
         width: 250%;
         gap: 10px;
-
-        @include padding-left-right;
       }
     }
   }
