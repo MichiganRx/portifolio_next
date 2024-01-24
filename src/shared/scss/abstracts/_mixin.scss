@@ -5,7 +5,7 @@
 }
 
 @mixin desktop-m() {
-  @media (max-width: 1000px) {
+  @media (max-width: 1150px) {
     @content;
   }
 }
