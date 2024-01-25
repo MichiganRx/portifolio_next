@@ -22,7 +22,7 @@ export default function Document() {
         />
         <meta
           property="og:image"
-          content={`${publicEnvs.NEXT_PUBLIC_ASSETS_URL}/img/baner%20para%20compartilhar.png`}
+          content={`${publicEnvs.NEXT_PUBLIC_ASSETS_URL}/baner-para-compartilhar.png`}
         />
 
         <link
