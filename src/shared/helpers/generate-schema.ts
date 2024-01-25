@@ -5,6 +5,6 @@ export function generateSchema() {
     '@context': 'https://schema.org',
     '@type': 'Organization',
     url: 'https://www.b2ml.com.br',
-    logo: `${publicEnvs.NEXT_PUBLIC_ASSETS_URL}/img/svg/home/group.svg`,
+    logo: `${publicEnvs.NEXT_PUBLIC_ASSETS_URL}/flaticon.png`,
   };
 }
