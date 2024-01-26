@@ -1,6 +1,6 @@
 @use "abstracts" as *;
 
-.SelectTrigger {
+.selectTrigger {
   display: inline-flex;
   align-items: center;
   justify-content: space-between;
@@ -16,17 +16,17 @@
   @include font-paragraph;
 }
 
-.SelectTrigger:focus,
-.SelectTrigger:hover {
+.selectTrigger:focus,
+.selectTrigger:hover {
   border-bottom: 2px solid $color-primary;
   cursor: pointer;
 }
 
-.SelectIcon {
+.selectIcon {
   color: $color-primary;
 }
 
-.SelectContent {  
+.selectContent {  
   cursor: pointer;
   width: var(--radix-select-trigger-width);
   max-height: var(--radix-select-content-available-height);
@@ -41,7 +41,7 @@
   @include font-paragraph;
 }
 
-.SelectItem {
+.selectItem {
   line-height: 1;
   display: flex;
   align-items: center;
@@ -54,11 +54,11 @@
   @include font-paragraph;
 }
 
-.SelectItem[data-disabled] {
+.selectItem[data-disabled] {
   pointer-events: none;
 }
 
-.SelectItem[data-highlighted] {
+.selectItem[data-highlighted] {
   outline: none;
   width: 100%;
   background-color: #3F5936;

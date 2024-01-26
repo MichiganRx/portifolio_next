@@ -18,7 +18,7 @@ const SelectItem = forwardRef<
   ComponentPropsWithoutRef<typeof Select.Item>
 >(({ children, className, ...props }, forwardedRef) => {
   return (
-    <Select.Item className={styles.SelectItem} {...props} ref={forwardedRef}>
+    <Select.Item className={styles.selectItem} {...props} ref={forwardedRef}>
       <Select.ItemText>{children}</Select.ItemText>
     </Select.Item>
   );
@@ -46,22 +46,22 @@ const SelectDemo = forwardRef<HTMLButtonElement, SelectProps>(
         }
       >
         <Select.Trigger
-          className={styles.SelectTrigger}
+          className={styles.selectTrigger}
           aria-label="option"
           ref={ref}
         >
           <Select.Value placeholder={placeholderSelect} />
-          <Select.Icon className={styles.SelectIcon}>
+          <Select.Icon className={styles.selectIcon}>
             <ChevronDownIcon />
           </Select.Icon>
         </Select.Trigger>
-        <Select.Content position="popper" className={styles.SelectContent}>
-          <Select.Viewport className={styles.SelectViewport}>
+        <Select.Content position="popper" className={styles.selectContent}>
+          <Select.Viewport>
             <SelectItem value="ORCAMENTO">{optionSelect1}</SelectItem>
             <SelectItem value="DUVIDAS">{optionSelect2}</SelectItem>
             <SelectItem value="OUTROS">{optionSelect3}</SelectItem>
           </Select.Viewport>
-          <Select.ScrollDownButton className={styles.SelectScrollButton}>
+          <Select.ScrollDownButton>
             <ChevronDownIcon />
           </Select.ScrollDownButton>
         </Select.Content>
