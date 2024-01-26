@@ -35,7 +35,10 @@ export default function Button({
   const Component = asChild ? Slot : 'button';
 
   return (
-    <Component className={`${buttonClasses} ${style[variant]}`} {...rest}>
+    <Component
+      className={`${buttonClasses} ${style[variant as keyof typeof style]}`}
+      {...rest}
+    >
       {children}
     </Component>
   );
