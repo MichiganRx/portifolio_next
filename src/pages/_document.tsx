@@ -1,7 +1,6 @@
 import { Html, Head, Main, NextScript } from 'next/document';
 
 import { generateSchema } from '@/shared/helpers/generate-schema';
-import { publicEnvs } from '@/shared/helpers/public-envs';
 
 export default function Document() {
   const schema = generateSchema();
@@ -20,10 +19,7 @@ export default function Document() {
           property="og:image:alt"
           content="Tecnologia desenvolvendo negócios"
         />
-        <meta
-          property="og:image"
-          content={`${publicEnvs.NEXT_PUBLIC_ASSETS_URL}/baner-para-compartilhar.png`}
-        />
+        <meta property="og:image" content={`/baner-para-compartilhar.png`} />
 
         <link
           rel="apple-touch-icon"
