@@ -13,6 +13,7 @@
   padding: 8px;
   margin-left: 20px;
   cursor: pointer;
+  transition: box-shadow 0.3s;
 
   &:hover{
     background: linear-gradient(94deg, $color-primary-10 0%, $color-primary 100%);

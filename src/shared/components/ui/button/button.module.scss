@@ -8,6 +8,7 @@
   border-radius: 10px;
   cursor: pointer;
   white-space:nowrap;
+  transition: box-shadow 0.3s;
   
   @include font-button;
 }

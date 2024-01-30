@@ -42,7 +42,7 @@
   
   @include padding-left-right;
 
-  @include tablet{
+  @include desktop-m{
     padding: 0;
     overflow: hidden;
   }
@@ -56,6 +56,10 @@
       display: flex;
       justify-content: space-between;
       align-items: stretch;
+
+      @include desktop-m{
+        width: 180%;
+      }
 
       @include tablet{
         width: 250%;
