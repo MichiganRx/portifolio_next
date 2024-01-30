@@ -36,7 +36,12 @@ const Header = () => {
     <header className={styles.container}>
       <button className={styles.logoCompany}>
         <Link href="./">
-          <Image src="/logo.svg" alt="Logo da empresa" width={50} height={50} />
+          <Image
+            src="/img/logo.svg"
+            alt="Logo da empresa"
+            width={50}
+            height={50}
+          />
         </Link>
       </button>
       <nav className={styles.areaMenu}>

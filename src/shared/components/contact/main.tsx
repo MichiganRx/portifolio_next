@@ -67,7 +67,7 @@ export const MainSection = () => {
       <h1>{title}</h1>
       {isMessageSend && (
         <div className={styles.messageSucess}>
-          <Image src="/logo.svg" alt="Organic" width={190} height={125} />
+          <Image src="/img/logo.svg" alt="Organic" width={190} height={125} />
           <h2>{h2Success}</h2>
           <h3>{h3Success}</h3>
         </div>
