@@ -59,7 +59,7 @@
     
     @include font-description-l;
   }
-
+  
   div{
     height: fit-content;
     margin-right: 40px;
@@ -72,6 +72,19 @@
 
   .mapSite{
     margin-bottom: 40px;
+
+    & ul{
+      & li{
+        & > a{
+          transition: 0.3s;
+  
+          &:hover{
+            color: $color-primary;
+          }
+        }
+      }
+    }
+   
   }
 
   .contact{
