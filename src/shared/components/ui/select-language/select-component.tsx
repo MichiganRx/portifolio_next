@@ -4,19 +4,17 @@ import { ChevronDownIcon } from '@radix-ui/react-icons';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 
-import { publicEnvs } from '@/shared/helpers/public-envs';
-
 import styles from './style.module.scss';
 
 const locales = [
   {
     value: 'pt-br',
-    icon: `${publicEnvs.NEXT_PUBLIC_ASSETS_URL}/img/pt.png`,
+    icon: '/pt.png',
     label: 'Português Brasileiro',
   },
   {
     value: 'en-us',
-    icon: `${publicEnvs.NEXT_PUBLIC_ASSETS_URL}/img/us.png`,
+    icon: '/us.png',
     label: 'Inglês',
   },
 ];

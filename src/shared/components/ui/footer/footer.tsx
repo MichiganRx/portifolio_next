@@ -82,7 +82,7 @@ export const Footer = () => {
           <Button variant="tertiary" asChild>
             <Link href="./contato">
               <Image
-                src="/icon-email-black.svg"
+                src="/img/icon-email-black.svg"
                 alt="Entrat em contato por E-mail"
                 width={24}
                 height={16}
@@ -93,7 +93,7 @@ export const Footer = () => {
           <Button variant="tertiary" asChild>
             <Link href="./contato">
               <Image
-                src="/icon-tel-black.svg"
+                src="/img/icon-tel-black.svg"
                 alt="Entrat em contato por Telefone"
                 width={24}
                 height={16}

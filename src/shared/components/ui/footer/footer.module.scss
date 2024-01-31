@@ -1,7 +1,7 @@
 @use "abstracts" as *;
 
 .footerTop{
-  background: url(/bg-footer.svg);
+  background: url(/img/bg-footer.svg);
   background-size: cover !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
@@ -14,7 +14,7 @@
   @include start-pages;
 
   @include mobile-l{
-    background: url(/bg-footer-responsive.svg);
+    background: url(/img/bg-footer-responsive.svg);
   }
 
   & span{

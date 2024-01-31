@@ -12,7 +12,7 @@ export const MainSection = () => {
     <section className={style.container}>
       <div className={style.containerVideo}>
         <video autoPlay loop muted playsInline>
-          <source src={`./video-bg-main-home.mp4`} type="video/mp4" />
+          <source src={`/img/video-bg-main-home.mp4`} type="video/mp4" />
         </video>
       </div>
       <div className={style.text}>

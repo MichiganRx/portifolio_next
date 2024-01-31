@@ -13,7 +13,7 @@ export const quartenaryLocale = {
 export const Acting = [
   {
     'en-us': {
-      image: '/body-shop.svg',
+      image: '/img/body-shop.svg',
       alt: 'Body Shop',
       title: 'Body Shop',
       subtitle: 'Outsourcing ',
@@ -21,7 +21,7 @@ export const Acting = [
     },
 
     'pt-br': {
-      image: '/body-shop.svg',
+      image: '/img/body-shop.svg',
       alt: 'Body Shop',
       title: 'Body Shop',
       subtitle: 'Outsourcing',
@@ -30,7 +30,7 @@ export const Acting = [
   },
   {
     'en-us': {
-      image: '/open-scope.svg',
+      image: '/img/open-scope.svg',
       alt: 'Open Scope',
       title: 'Open Scope',
       subtitle: 'Monthly Hours',
@@ -38,7 +38,7 @@ export const Acting = [
     },
 
     'pt-br': {
-      image: '/open-scope.svg',
+      image: '/img/open-scope.svg',
       alt: 'Escopo Aberto',
       title: 'Escopo Aberto',
       subtitle: 'Horas Mensais',
@@ -47,7 +47,7 @@ export const Acting = [
   },
   {
     'en-us': {
-      image: '/closed-scope.svg',
+      image: '/img/closed-scope.svg',
       alt: 'Closed Scope',
       title: 'Closed Scope',
       subtitle: 'End-to-End',
@@ -55,7 +55,7 @@ export const Acting = [
     },
 
     'pt-br': {
-      image: '/closed-scope.svg',
+      image: '/img/closed-scope.svg',
       alt: 'Escopo Fechado',
       title: 'Escopo Fechado',
       subtitle: 'Ponta a Ponta',
