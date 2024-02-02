@@ -72,10 +72,13 @@
     }
   }
 
-  &:nth-child(2){
+  transition: all 400ms;
+
+  &:hover{
     background: $color-primary;
     color: $color-neutral-dark;
     scale: 1;
+   
 
     & span{
       font-weight: 600;

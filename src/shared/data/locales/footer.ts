@@ -11,9 +11,6 @@ export const footerLocale = {
     title3: 'Contact',
     title4: 'Addresses',
     end1: 'HEADQUARTERS: R. Francisco Masseli, 31, 1º Andar (101, 102, 103) - Centro, Itajubá - MG, 37500-007. | Tel: +55 (35) 3622-7650',
-    end2: 'OFFICE: Av. Fagundes Filho, 361, CJ 14 - São Judas, São Paulo - SP, 04304-010. | Tel: +55 (11) 4063-1409',
-    end3: 'OFFICE: Pátio Brasil Shopping - Setor Comercial Sul Quadra 7, Bloco A 12º Andar - Asa Sul, Brasília - DF, 70307-902. | Tel: +55 (61) 4063-8369',
-    end4: 'OFFICE AFRICA: Moçambique - Maputo. Malhampsene, N° 50, 1º Andar, Rua Largo Tiago Müller. | Tel: +258 84 073 2418',
     copyright: '© Organic Soluções - All rights reserved.',
   },
 
@@ -29,9 +26,6 @@ export const footerLocale = {
     title3: 'Contato',
     title4: 'Endereços',
     end1: 'MATRIZ: R. Francisco Masseli, 31, 1º Andar (101, 102, 103) - Centro, Itajubá - MG, 37500-007. | Tel: +55 (35) 3622-7650',
-    end2: 'ESCRITÓRIO: Av. Fagundes Filho, 361, CJ 14 - São Judas, São Paulo - SP, 04304-010. | Tel: +55 (11) 4063-1409',
-    end3: 'ESCRITÓRIO: Pátio Brasil Shopping - Setor Comercial Sul Quadra 7, Bloco A 12º Andar - Asa Sul, Brasília - DF, 70307-902. | Tel: +55 (61) 4063-8369',
-    end4: 'ESCRITÓRIO ÁFRICA: Moçambique - Maputo. Malhampsene, N° 50, 1º Andar, Rua Largo Tiago Müller. | Tel: +258 84 073 2418',
     copyright: '© Organic Soluções - Todos os direitos reservados.',
   },
 };

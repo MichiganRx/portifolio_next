@@ -6,64 +6,50 @@
   justify-content: space-between;
   border: none;
   outline: none;
-  height: 39px;
-  width: 64px;
-  border-radius: 10px;
+  border-radius: 8px;
   background: $color-primary-10;
-  padding: 8px;
+  padding: 4px 0px;
+  z-index: 9;
   margin-left: 20px;
-  cursor: pointer;
-  transition: box-shadow 0.3s;
 
-  &:hover{
-    background: linear-gradient(94deg, $color-primary-10 0%, $color-primary 100%);
-    box-shadow: 0px 0px 16px 4px $color-primary-10;
+  &:focus, &:hover{
+    cursor: pointer;
   }
 }
 
 .selectIcon {
-  margin-left: 10px;
+  width: 30px;
   color: $color-neutral-light;
 }
 
 .selectContent {
+  display: flex;
+  align-items: center;
   overflow: hidden;
   border: none;
   outline: none;
-  width: 64px;
-  height: auto;
   border-radius: 0 0 8px 8px;
   background: $color-primary-10;
-  padding: 0 6px;
   margin-top: -10px;
-  z-index: 2;
-  position: relative;
+  z-index: -9;
 }
 
 .selectSeparator {
   height: 1px;
   background-color: $color-neutral-light;
   margin-top: 10px;
-}
-
-.areaImg {
-  margin-left: 3px;
+  width: 80%;
 }
 
 .image {
-  border-radius: 6px;
-  margin-top: 5px;
-
-  @include mobile-l{
-    max-width: 30px;
-    max-height: 22px;
-  }
+  border-radius: 4px;
+  max-width: clamp(22px, 1.2vw, 30px);
+  max-height: clamp(15px, 1vw, 22px);
+  margin-left: 10px;
 }
 
 .selectItem {
-  padding: 5px 0;
-  padding-right: 25px;
-  width: 100%;
+  padding-right: 30px;
 
   &[data-disabled]{
     pointer-events: none;
@@ -74,3 +60,4 @@
     cursor: pointer;
   }
 }
+

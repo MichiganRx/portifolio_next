@@ -4,6 +4,8 @@ import { ChevronDownIcon } from '@radix-ui/react-icons';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 
+import { publicEnvs } from '@/shared/helpers/public-envs';
+
 import styles from './style.module.scss';
 
 const locales = [
@@ -48,7 +50,7 @@ const SelectDemo = () => {
       <Select.Content position="popper" className={styles.selectContent}>
         <Select.Separator className={styles.selectSeparator} />
         <Select.Viewport>
-          <div className={styles.areaImg}>
+          <div>
             {locales.map(({ value, label, icon }) => (
               <SelectItem key={value} value={value} hidden={value === locale}>
                 <Image
