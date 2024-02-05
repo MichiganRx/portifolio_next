@@ -16,7 +16,7 @@
 .logoCompany{
   & img{
     width: clamp(80px, 20vw, 150px);
-    height: clamp(30px, 5vw, 50px);
+    height: clamp(30px, 3vw, 50px);
   }
 }
 
@@ -27,14 +27,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 20px;
 
     @include tablet{
       display: none;
     }
-  }
-
-  & li {
-    margin: 0px 20px;
   }
 
   &  > a {

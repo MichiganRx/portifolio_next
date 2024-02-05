@@ -1,4 +1,3 @@
-export declare const areaImg: string;
 export declare const image: string;
 export declare const selectContent: string;
 export declare const selectIcon: string;

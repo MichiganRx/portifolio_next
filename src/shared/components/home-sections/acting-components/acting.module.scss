@@ -18,9 +18,13 @@
   align-items: center;
   padding: 24px;
   gap: 8px;
-  border-radius: 30px 0px 0px 30px;
+  border-radius: 20px 0px 0px 20px;
   border-right: 3px solid var(--Color-Primary, #65B741);
   background: linear-gradient(270deg, #65B741 0%, rgba(101, 183, 65, 0.50) 100%);
+
+  @include desktop-l{
+    padding: 15px 24px;
+  }
 
   @include tablet{
     display: flex;
@@ -29,11 +33,12 @@
     flex-direction: column;
     padding: 10px 0;
     border-radius: 24px 24px 0px 0px;
+    min-width: 100px;
   }
 
   & img{
-    width: 70px;
-    height: 70px;
+    width: clamp(50px, 4vw, 70px);
+    height: clamp(50px, 4vw, 70px);
 
     @include tablet{
       width: 50px;
@@ -67,7 +72,7 @@
   width: 100%;
   padding: 24px;
   align-items: center;
-  border-radius: 0px 30px 30px 0px;
+  border-radius: 0px 20px 20px 0px;
   background: rgba(36, 81, 17, 0.20);
 
   @include tablet{
