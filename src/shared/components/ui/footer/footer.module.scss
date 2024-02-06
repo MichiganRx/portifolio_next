@@ -43,9 +43,13 @@
 .footerBottom{
   color: $color-neutral-light;
   justify-content: space-between;
-  flex-wrap: wrap;
+  gap: 40px;
   
   @include start-pages;
+
+  @include desktop-m{
+    flex-wrap: wrap;
+  }
 
   span{
     @include font-subtitle;
@@ -56,13 +60,12 @@
   a{
     color: $color-neutral-light-opacity-7;
     margin-top: 24px;  
-    
+
     @include font-description-l;
   }
   
   div{
     height: fit-content;
-    margin-right: 40px;
 
     @include mobile-l{
       margin-right: 0;
@@ -72,6 +75,7 @@
 
   .mapSite{
     margin-bottom: 40px;
+    white-space: nowrap;
 
     & ul{
       & li{
@@ -95,10 +99,30 @@
       @include font-button;
     }
   }
-  
-  .address{
-    max-width: 650px;
-    margin-right: 0;
+
+  .mapBox{
+    position: relative;
+
+    @include desktop-m{
+      width: 100%;
+    }
+
+    & > div{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      & > iframe{
+        width: 300px;
+        margin-top: 24px;
+        border: none;
+        height: 250px;
+
+        @include desktop-m{
+          width: 100%;
+        }
+      }
+    }
   }
 }
 
