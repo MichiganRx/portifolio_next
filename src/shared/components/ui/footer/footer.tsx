@@ -28,9 +28,7 @@ export const Footer = () => {
     title3,
     title4,
     end1,
-    end2,
-    end3,
-    end4,
+    titleMap,
     copyright,
   } = useLocale(footerLocale);
 
@@ -105,9 +103,16 @@ export const Footer = () => {
         <div className={styles.address}>
           <span>{title4}</span>
           <h4>{end1}</h4>
-          <h4>{end2}</h4>
-          <h4>{end3}</h4>
-          <h4>{end4}</h4>
+        </div>
+        <div className={styles.mapBox}>
+          <span>{titleMap}</span>
+          <div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d922.019165839161!2d-45.456486339929064!3d-22.42614016135502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cb64aca264c789%3A0xff28bb5def3ccc17!2sB2ML%20Sistemas!5e0!3m2!1spt-BR!2sbr!4v1707243216422!5m2!1spt-BR!2sbr"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </div>
       </div>
       <div className={styles.copyright}>

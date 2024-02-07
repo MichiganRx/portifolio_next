@@ -11,6 +11,7 @@ export const footerLocale = {
     title3: 'Contact',
     title4: 'Addresses',
     end1: 'HEADQUARTERS: R. Francisco Masseli, 31, 1º Andar (101, 102, 103) - Centro, Itajubá - MG, 37500-007. | Tel: +55 (35) 3622-7650',
+    titleMap: 'Our Office',
     copyright: '© Organic Soluções - All rights reserved.',
   },
 
@@ -26,6 +27,7 @@ export const footerLocale = {
     title3: 'Contato',
     title4: 'Endereços',
     end1: 'MATRIZ: R. Francisco Masseli, 31, 1º Andar (101, 102, 103) - Centro, Itajubá - MG, 37500-007. | Tel: +55 (35) 3622-7650',
+    titleMap: 'Nosso Escritório',
     copyright: '© Organic Soluções - Todos os direitos reservados.',
   },
 };
