@@ -100,7 +100,7 @@ export const Footer = () => {
             </Link>
           </Button>
         </div>
-        <div className={styles.address}>
+        <div>
           <span>{title4}</span>
           <h4>{end1}</h4>
         </div>
@@ -108,7 +108,7 @@ export const Footer = () => {
           <span>{titleMap}</span>
           <div>
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d922.019165839161!2d-45.456486339929064!3d-22.42614016135502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cb64aca264c789%3A0xff28bb5def3ccc17!2sB2ML%20Sistemas!5e0!3m2!1spt-BR!2sbr!4v1707243216422!5m2!1spt-BR!2sbr"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14752.06562347883!2d-45.45829254743225!3d-22.42840832351178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cb7caed9838fc3%3A0x1eb29d35b0b1f6b2!2zT1JHQU5JQyBTT0xVw4fDlUVT!5e0!3m2!1spt-BR!2sbr!4v1707335451485!5m2!1spt-BR!2sbr"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
