@@ -1,0 +1,102 @@
+@use "abstracts" as *;
+
+.containerButtons{
+
+  @include mobile-l{
+    overflow: hidden;
+    gap: 5px;
+  }
+
+  & > div{
+    height: calc(100% + 20px);
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    & > div{
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      min-width: fit-content;
+      gap: 15px;
+
+      @include tablet{
+        flex-wrap: nowrap;
+        @include padding-left-right;
+      }
+    }
+  }
+}
+
+.selected {
+  background: $color-primary;
+  color: $color-neutral-dark;
+
+  &:hover{
+    background: $color-primary;
+    color: $color-neutral-dark;
+  }
+}
+
+/* -------------------------- DESCRIPTION ------------------------ */
+
+.containerContent{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  @include tablet{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.videoContainer{
+  width: 45%;
+  display: flex;
+  justify-content: center;
+
+  & video{
+    height: 100%;
+    max-height: 400px;
+    border-radius: 15px;
+
+    @include tablet{
+      width: 80%;
+      height: 190px;
+    }
+  }
+}
+
+.containerDescription{
+  width: 40%;
+
+  & h3{
+    color: $color-primary;
+    border-bottom: 2px solid $color-primary;
+    padding-bottom: 10px;
+
+    @include font-title-m;
+    @include tablet{
+      margin-top: 40px;
+    }
+  }
+
+  & p{
+    color: $color-neutral-light-opacity-7;
+    margin-top: 16px;
+
+    @include font-paragraph;
+  }
+
+  & a{
+    margin-top: 20px;
+  }
+
+  @include tablet{
+    width: 100%;
+  }
+}
+
+.hidden {
+  display: none;
+}

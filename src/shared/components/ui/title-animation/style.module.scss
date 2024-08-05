@@ -1,0 +1,21 @@
+@use "abstracts" as *;
+
+.typewriter {
+  white-space: pre-wrap; 
+  width: 350px;
+
+  @include desktop-g{
+    width: fit-content;
+  }
+}
+
+.typewriter div {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: blink-caret 0.75s step-end infinite;
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: black; }
+}

@@ -1,23 +1,23 @@
 import { Header } from '@/shared/components/ui/header/header';
 import { MainSection } from '@/shared/components/home-sections/main';
-import { ServicesProvided } from '@/shared/components/home-sections/services-provided';
-import { ServicesOffered } from '@/shared/components/home-sections/services-offered';
-import { QuartenarySection } from '@/shared/components/home-sections/acting';
+import { AboutMe } from '@/shared/components/home-sections/about-me';
+import { Certifications } from '@/shared/components/home-sections/certifications';
 import { Footer } from '@/shared/components/ui/footer/footer';
 import { SEO } from '@/shared/components/seo';
+import { Projects } from '@/shared/components/home-sections/projects';
 
 export default function Home() {
   return (
     <>
       <SEO
-        title="Organic Soluções: Tecnologia desenvolvendo negócios"
-        description="Desenvolvemos serviços para alavancar seu negócio, desde plataformas web até bancos digitais e sistemas IOT com IA's"
+        title="Amanda Rodrigues - Portifólio"
+        description="Desenvolvedora Front-End"
       />
       <Header />
       <MainSection />
-      <ServicesProvided />
-      <ServicesOffered />
-      <QuartenarySection />
+      <AboutMe />
+      <Projects />
+      <Certifications />
       <Footer />
     </>
   );

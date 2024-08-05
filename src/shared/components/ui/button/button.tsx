@@ -1,4 +1,4 @@
-import { ComponentPropsWithoutRef, ReactNode } from 'react';
+import React, { ComponentPropsWithoutRef, ReactNode } from 'react';
 import { Slot } from '@radix-ui/react-slot';
 
 import { cn } from '@/shared/helpers/shadcn-utils';
@@ -43,3 +43,25 @@ export default function Button({
     </Component>
   );
 }
+
+interface DownloadButtonProps {
+  link: string;
+  isVisible: boolean;
+}
+
+export const DownloadButton: React.FC<DownloadButtonProps> = ({
+  link,
+  isVisible,
+}) => {
+  if (!isVisible) {
+    return null;
+  }
+
+  return (
+    <Button variant="primary" asChild>
+      <a href={link} download>
+        Download Projeto
+      </a>
+    </Button>
+  );
+};

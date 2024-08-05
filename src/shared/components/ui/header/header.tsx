@@ -17,33 +17,23 @@ export interface NavProps {
 }
 
 const Header = () => {
-  const { link1, link2, link3 } = useLocale(headerLocale);
+  const { link1, link2 } = useLocale(headerLocale);
 
   const navBar: NavProps[] = [
     {
       id: 1,
       label: link1,
-      link: './#solucoes',
+      link: './#sobre-mim',
     },
     {
       id: 2,
       label: link2,
-      link: './#servicos',
+      link: './#projetos',
     },
   ];
 
   return (
     <header className={styles.container}>
-      <button className={styles.logoCompany}>
-        <Link href="./">
-          <Image
-            src="/img/logo.svg"
-            alt="Logo da empresa"
-            width={50}
-            height={50}
-          />
-        </Link>
-      </button>
       <nav className={styles.areaMenu}>
         <ul>
           {navBar.map(({ id, label, link }: NavProps) => (
@@ -54,11 +44,15 @@ const Header = () => {
             </li>
           ))}
         </ul>
+      </nav>
+      <div>
         <Button variant="primary" asChild>
-          <Link href="/contato">{link3}</Link>
+          <a href="/Amanda Rodrigues - Front End Developer.pdf" download>
+            Download CV
+          </a>
         </Button>
         <SelectDemo />
-      </nav>
+      </div>
     </header>
   );
 };

@@ -1,26 +1,43 @@
+import Image from 'next/image';
+
 import { mainHomeLocale } from '@/shared/data/locales/home/main';
 import { useLocale } from '@/shared/hooks/use-locale';
 
-import { NumberedInfoBar } from './main-components/numbered-info-bar';
+import Typewriter from '../ui/title-animation/title-animation-component';
+import Button from '../ui/button/button';
+
 import style from './styles/main.module.scss';
 
 export const MainSection = () => {
-  const { titleMainPt1, titleMainPt2, descriptionMain } =
+  const { titleMainPt1, titleMainPt2, titleMainPt3 } =
     useLocale(mainHomeLocale);
+
+  const phrases = [titleMainPt1, titleMainPt2, titleMainPt3];
+  const phraseClasses = [
+    style.phraseStyle1,
+    style.phraseStyle2,
+    style.phraseStyle3,
+  ];
 
   return (
     <section className={style.container}>
       <div className={style.containerVideo}>
         <video autoPlay loop muted playsInline>
-          <source src={`/img/video-bg-main-home.mp4`} type="video/mp4" />
+          <source src="/video_bg.mp4" type="video/mp4" />
         </video>
       </div>
-      <div className={style.text}>
-        <h1>{titleMainPt1}</h1>
-        <h2>{titleMainPt2}</h2>
-        <p>{descriptionMain}</p>
+      <div className={style.descriptionPersonal}>
+        <Typewriter phrases={phrases} styles={phraseClasses} />
+        <button>
+          <Image
+            src="/personal.png"
+            alt="Foto da Amanda"
+            width={300}
+            height={450}
+          />
+        </button>
+        <div className={style.gradient} id="sobre-mim"></div>
       </div>
-      <NumberedInfoBar />
     </section>
   );
 };

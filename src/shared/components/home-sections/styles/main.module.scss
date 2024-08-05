@@ -1,20 +1,23 @@
 @use "abstracts" as *;
 
-$height: calc(100vh - 100px);
-$min-heigth: 400px;
+$height: 620px;
+$min-heigth: 620px;
+
+$heightL: 400px;
+$min-heigthL: 400px;
 
 .container{
   display: flex;
-  flex-direction: column;
   align-items: center;
   width: 100%;
   height: $height;
   min-height: $min-heigth;
-  background: url(/img/logo-bg-main-home.png) !important;
-  background-size: 85% !important;
-  background-position: center !important;
-  background-repeat: no-repeat !important;
-  background-color: $color-neutral-dark-opacity-7 !important;
+  background-color: $color-neutral-dark-opacity-9 !important;
+
+  @include mobile-l{
+    height: $heightL;
+    min-height: $min-heigthL;
+  }
 }
 
 .containerVideo{
@@ -26,43 +29,90 @@ $min-heigth: 400px;
   top: 0;
   left: 0;
   overflow: hidden;
-  background-color: rgb(0, 0, 0);
+  filter: hue-rotate(190deg);
+
+  @include mobile-l{
+    height: $heightL;
+    min-height: $min-heigthL;
+  }
 
   video{
-    width: 120%;
-    min-width: 1400px;
-    margin-top: -100px;
-    margin-left: 300px;
-    height: 1000px;
+    min-height: 100vh;
+    min-width: 2000px;
+    margin-top: -600px;
 
     @include mobile-l{
+      min-height: 100vh;
+      min-width: 2000px;
+      margin-top: -600px;
       margin-left: -200px;
     }
   }
 }
 
-.text{
-  text-align: center;
-  width: 100%;
+.descriptionPersonal{
+  display: flex;
+  min-width: 100%;
   height: 100%;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  gap: 20%;
+  padding-top: 50px;
 
-  @include centered-pages;
-
-  h1,h2{
-    color: $color-neutral-light;
-
-    @include font-title-main;
+  @include desktop-m{
+    gap: 10%;
   }
 
-  h2{
-    color: $color-primary;
-    margin-bottom: 16px;
+  @include desktop-g{
+   align-items: center;
+   text-align: center;
   }
 
-  p{
-    max-width: 650px;
-    color: $color-neutral-light-opacity-7;
-
-    @include font-subtitle;
+  & button{
+    @include desktop-g{
+      display: none;
+    }
+    
+    & img{
+      transition: 0.5s;
+  
+      &:hover{
+        scale: 1.05;
+      }
+  
+      @include desktop-m{
+        width: 250px;
+        height: 350px;
+      }
+    }
   }
+}
+
+.gradient{
+  position: absolute;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0),  rgba(21, 21, 21, 0.8), $color-neutral-dark-opacity-9);
+  width: 100%;
+  height: 200px;
+  margin-top: 370px;
+  left: 0;
+
+   @include mobile-l{
+   display: none;
+  }
+}
+
+.phraseStyle1 {
+  color: $color-neutral-light;
+  @include font-title-main;
+}
+
+.phraseStyle2 {
+  color: $color-primary;
+  @include font-title-main;
+}
+
+.phraseStyle3 {
+  color: $color-neutral-light-opacity-6;
+  @include font-subtitle;
 }

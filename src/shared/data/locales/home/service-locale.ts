@@ -1,104 +1,67 @@
 export const serviceHomeLocale = {
   'en-us': {
-    title:
-      'Combining creativity and cutting-edge technology,<strong> we are here to drive your success in the digital world.</strong>',
-    subtitle:
-      'Explore our solutions and discover how we can make your vision a reality.',
+    title: 'Projects',
+    subtitle: 'Here are some of the most complete projects I have developed.',
   },
   'pt-br': {
-    title:
-      'Combinando criatividade e tecnologia de ponta, <strong>estamos aqui para impulsionar o seu sucesso no mundo digital.</strong>',
-    subtitle:
-      'Explore nossas soluções e descubra como podemos tornar sua visão uma realidade.',
+    title: 'Projetos',
+    subtitle: 'Aqui estão alguns dos projetos mais completos que desenvolvi.',
   },
 };
 
 export const DescriptionProjects = [
   {
     'en-us': {
-      title: 'Corporate Systems',
-      descriptions:
-        'Our corporate systems are the backbone of successful companies. We develop business management solutions that span from inventory control to human resources management. By combining functionality and usability, our systems allow you to optimize processes, make informed decisions, and enhance operational efficiency.',
-      imgProject: '/img/secondary/sistemas-corporativos.svg',
+      title: 'MR Marcenaria - SENAC',
+      descriptions: `MR Marcenaria was a system developed as our integrative project. Our class was divided into three teams: front-end, back-end, and management. The front-end team used HTML, JavaScript, and SASS, while the back-end was developed in PHP and MySQL. The management team was responsible for deadlines and project coordination. I was part of the front-end team, where I was responsible for design, HTML, styling, animations, and integration. The project was developed for a real client with the goal of controlling the client's inventory.`,
+      imgProject: '/mr.mp4',
+      linkButton: '',
+      isButtonVisible: false,
     },
 
     'pt-br': {
-      title: 'Sistemas Corporativos',
+      title: 'MR Marcenaria - SENAC',
       descriptions:
-        'Nossos sistemas corporativos são a espinha dorsal de empresas bem-sucedidas. Desenvolvemos soluções de gestão empresarial que abrangem desde o controle de estoque até a gestão de recursos humanos. Combinando funcionalidade e usabilidade, nossos sistemas permitem que você otimize processos, tome decisões informadas e melhore a eficiência operacional.',
-      imgProject: '/img/secondary/sistemas-corporativos.svg',
+        'MR Marcenaria foi um sistema desenvolvido como nosso projeto integrador. Nossa turma foi dividida em três equipes: front-end, back-end e gestão. A equipe de front-end utilizou HTML, JavaScript e SASS, enquanto o back-end foi desenvolvido em PHP e MySQL. A equipe de gestão foi responsável pelos prazos e pela coordenação do projeto. Eu fiz parte da equipe de front-end, onde fui responsável pelo design, HTML, estilização, animações e integração. O projeto foi desenvolvido para um cliente real, com o objetivo de controle de estoque.',
+      imgProject: '/mr.mp4',
+      linkButton: '',
+      isButtonVisible: false,
     },
   },
   {
     'en-us': {
-      title: 'Apps',
+      title: 'Caneta Zoo - SENAC',
       descriptions:
-        'We turn your ideas into high-quality applications published on Google and Apple stores. Our team of experienced developers works closely with you from concept to launch, ensuring that your app delivers an exceptional user experience and achieves the desired success.',
-      imgProject: '/img/secondary/aplicativos.svg',
+        'Caneta Zoo was a mobile application developed in React Native, where I used various libraries, including react-native-reanimated-carousel. Styling was done with StyleSheet, the database was managed with MySQL, and APIs and database queries were implemented in PHP. The app was designed for pen sales and includes full functionalities, from the login screen to payment and delivery.',
+      imgProject: '/caneta_zoo.mp4',
+      linkButton: '/caneta_zoo_download.zip',
+      isButtonVisible: true,
     },
     'pt-br': {
-      title: 'Aplicativos',
+      title: 'Caneta Zoo - SENAC',
       descriptions:
-        'Transformamos suas ideias em aplicativos de alta qualidade, publicados nas lojas  Google e Apple. Nossa equipe de desenvolvedores experientes trabalha em estreita colaboração com você, desde o conceito até o lançamento, garantindo que seu aplicativo ofereça uma experiência excepcional aos usuários e alcance o sucesso desejado.',
-      imgProject: '/img/secondary/aplicativos.svg',
+        'Caneta Zoo foi um aplicativo móvel desenvolvido em React Native, no qual utilizei várias bibliotecas, incluindo react-native-reanimated-carousel. A estilização foi realizada com StyleSheet, o banco de dados foi gerenciado com MySQL e as APIs e consultas ao banco de dados foram implementadas em PHP. O aplicativo foi projetado para vendas de canetas e inclui funcionalidades completas, desde a tela de login até o pagamento e entrega.',
+      imgProject: '/caneta_zoo.mp4',
+      linkButton: '/caneta_zoo_download.zip',
+      isButtonVisible: true,
     },
   },
   {
     'en-us': {
-      title: 'Industry 4.0 Software',
+      title: 'Mobank - SENAC',
       descriptions:
-        '"We are at the forefront of Industry 4.0, providing software solutions that incorporate the Internet of Things (IoT) and Artificial Intelligence (AI). Our customized systems for Industry 4.0 help automate processes, enhance decision-making, and increase efficiency, preparing your company for the future.',
-      imgProject: '/img/secondary/software-para-industria.svg',
+        'Mobank was a mobile application developed in React Native, with styling done through StyleSheet. The database was managed with MySQL, and APIs and queries were implemented in PHP. The app was designed for financial management, allowing users to input their balance and record their expenses, with the option to categorize these expenses. It is an excellent tool for those who need help managing their expenses.',
+      imgProject: '/caneta_zoo.mp4',
+      linkButton: '/caneta_zoo_download.zip',
+      isButtonVisible: true,
     },
     'pt-br': {
-      title: 'Software para Indústria 4.0',
+      title: 'Mobank - SENAC',
       descriptions:
-        'Estamos na vanguarda da Indústria 4.0, oferecendo soluções de software que incorporam Internet das Coisas (IoT) e Inteligência Artificial (IA). Nossos sistemas personalizados para indústria 4.0 ajudam a automatizar processos, melhorar a tomada de decisões e aumentar a eficiência, preparando sua empresa para o futuro.',
-      imgProject: '/img/secondary/software-para-industria.svg',
-    },
-  },
-  {
-    'en-us': {
-      title: 'Research and Development',
-      descriptions:
-        'Our commitment to research and development enables us to deeply understand your needs. Through extensive research, we tailor-create projects that meet your specific demands, maximizing return on investment and ensuring your vision becomes a reality.',
-      imgProject: '/img/secondary/pesquisa-e-desenvolvimento.svg',
-    },
-    'pt-br': {
-      title: 'Pesquisa e Desenvolvimento',
-      descriptions:
-        'Nosso compromisso com a pesquisa e desenvolvimento nos permite entender a fundo suas necessidades. Através de extensa pesquisa, criamos projetos sob medida que atendem às suas demandas específicas, maximizando o retorno sobre o investimento e garantindo que sua visão se torne realidade.',
-      imgProject: '/img/secondary/pesquisa-e-desenvolvimento.svg',
-    },
-  },
-  {
-    'en-us': {
-      title: 'Web Applications',
-      descriptions:
-        'We develop high-performance web applications, from elegant websites to robust e-commerce platforms. Our user-focused approach, attractive design, and advanced functionalities ensure that your online presence effectively attracts, converts, and retains customers.',
-      imgProject: '/img/secondary/aplicacoes-web.svg',
-    },
-
-    'pt-br': {
-      title: 'Aplicações Web',
-      descriptions:
-        'Desenvolvemos aplicativos web de alto desempenho, desde sites elegantes até robustas plataformas de e-commerce. Nossa abordagem focada no usuário, design atraente e funcionalidades avançadas garantem que sua presença online atraia, converta e retenha clientes de forma eficaz.',
-      imgProject: '/img/secondary/aplicacoes-web.svg',
-    },
-  },
-  {
-    'en-us': {
-      title: 'Financial Systems',
-      descriptions:
-        'We offer comprehensive solutions for the financial sector such as digital banks, acquiring platforms, and reconciliation services. Our expertise spans across the entire financial ecosystem. We simplify complex operations, making them efficient and secure, enabling your company to thrive in the modern financial world.',
-      imgProject: '/img/secondary/sistemas-financeiros.svg',
-    },
-
-    'pt-br': {
-      title: 'Sistemas Financeiros',
-      descriptions:
-        'Oferecemos soluções completas para o setor financeiro Como bancos digitais, plataformas de adquirência e conciliação. Nossa experiência abrange todo o ecossistema financeiro. Simplificamos operações complexas, tornando-as eficientes e seguras, permitindo que sua empresa prospere no mundo financeiro moderno.',
-      imgProject: '/img/secondary/sistemas-financeiros.svg',
+        'Mobank foi um aplicativo móvel desenvolvido em React Native, com estilização realizada através de StyleSheet. O banco de dados foi gerenciado com MySQL, e as APIs e consultas foram implementadas em PHP. O aplicativo foi projetado para controle de finanças, permitindo aos usuários inserir seu saldo e registrar seus gastos, com a opção de categorizar esses gastos. É uma excelente ferramenta para quem precisa de auxílio na gestão de suas despesas.',
+      imgProject: '/caneta_zoo.mp4',
+      linkButton: '/caneta_zoo_download.zip',
+      isButtonVisible: true,
     },
   },
 ];

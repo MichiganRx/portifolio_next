@@ -57,13 +57,6 @@ export const Footer = () => {
 
   return (
     <footer>
-      <div className={styles.footerTop}>
-        <span>{titlepart1}</span>
-        <span>{titlepart2}</span>
-        <Button variant="tertiary" asChild>
-          <Link href="./contato">{button}</Link>
-        </Button>
-      </div>
       <div className={styles.footerBottom}>
         <div className={styles.mapSite}>
           <span>{title2}</span>
@@ -99,20 +92,6 @@ export const Footer = () => {
               <p>{button}</p>
             </Link>
           </Button>
-        </div>
-        <div>
-          <span>{title4}</span>
-          <h4>{end1}</h4>
-        </div>
-        <div className={styles.mapBox}>
-          <span>{titleMap}</span>
-          <div>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14752.06562347883!2d-45.45829254743225!3d-22.42840832351178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cb7caed9838fc3%3A0x1eb29d35b0b1f6b2!2zT1JHQU5JQyBTT0xVw4fDlUVT!5e0!3m2!1spt-BR!2sbr!4v1707335451485!5m2!1spt-BR!2sbr"
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
         </div>
       </div>
       <div className={styles.copyright}>

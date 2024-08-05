@@ -11,9 +11,14 @@
   padding: 4px 0px;
   z-index: 9;
   margin-left: 20px;
+  transition: box-shadow 0.3s;
 
   &:focus, &:hover{
     cursor: pointer;
+  }
+
+  &:hover{
+    box-shadow: 0px 0px 16px 4px $color-primary-10;
   }
 }
 
@@ -50,6 +55,7 @@
 
 .selectItem {
   padding-right: 30px;
+  margin-top: 5px;
 
   &[data-disabled]{
     pointer-events: none;

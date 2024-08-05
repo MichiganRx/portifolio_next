@@ -1,24 +1,13 @@
 import { Html, Head, Main, NextScript } from 'next/document';
 
-import { generateSchema } from '@/shared/helpers/generate-schema';
-
 export default function Document() {
-  const schema = generateSchema();
-
   return (
     <Html lang="en">
       <Head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-        />
-        <meta property="og:site_name" content="Organic" />
+        <meta property="og:site_name" content="Portifólio" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.organic.com.br" />
-        <meta
-          property="og:image:alt"
-          content="Tecnologia desenvolvendo negócios"
-        />
+        <meta property="og:image:alt" content="Desenvolvedora Front End" />
         <meta property="og:image" content="/baner-para-compartilhar.png" />
 
         <link

@@ -1,0 +1,9 @@
+export declare const buttonNext: string;
+export declare const buttonPrev: string;
+export declare const container: string;
+export declare const embla: string;
+export declare const emblaButtons: string;
+export declare const emblaContainer: string;
+export declare const emblaDot: string;
+export declare const emblaDotSelected: string;
+export declare const emblaSlide: string;

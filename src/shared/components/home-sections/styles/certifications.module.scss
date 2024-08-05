@@ -1,0 +1,17 @@
+@use "abstracts" as *;
+
+.container{
+  border-top: 2px solid $color-primary;
+  background-image: url(/bg1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  
+  @include centered-pages;
+
+  & h2{
+    width: 100%;
+    color: $color-primary;
+    @include font-title-main-l;
+  }
+}

@@ -10,6 +10,7 @@
   white-space: nowrap;
   transition: box-shadow 0.3s;
   padding: clamp(5px, 0.5vw, 10px) clamp(5px, 0.8vw, 10px);
+  width: fit-content;
   
   @include font-button;
 }

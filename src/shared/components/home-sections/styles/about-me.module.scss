@@ -1,0 +1,72 @@
+@use "abstracts" as *;
+
+.container{  
+
+  @include centered-pages;
+
+  @include tablet{
+    @include padding-top-bottom;
+  }
+
+  & > div{
+    background-image: url(/bg1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    gap: 40px;
+    border: 1px solid $color-primary;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+
+    @include  start-pages;
+    
+    @include desktop-m{
+      flex-direction: column;
+    }
+
+    @include tablet{
+      border: none;
+      border-radius: 0;
+      border-top: 1px solid $color-primary;
+      border-bottom: 1px solid $color-primary;
+
+      & > img{
+        display: none;
+      }
+    }
+
+    & > div{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      gap: 20px;
+
+      & h2{
+        color: $color-primary;
+        @include font-title-main-l;
+      }
+
+      & span{
+        color: $color-neutral-light-opacity-6;
+        @include font-subtitle;
+
+        & strong{
+          color: $color-neutral-light-opacity-9;
+          font-weight: 400;
+        }
+      }
+
+      & > div{
+        display: flex;
+        gap: 30px;
+        margin-top: 30px;
+
+        @include mobile-l{
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}

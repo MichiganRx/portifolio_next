@@ -11,12 +11,9 @@
   backdrop-filter: blur(7px);
 
   @include spacing-header;
-}
 
-.logoCompany{
-  & img{
-    width: clamp(80px, 20vw, 150px);
-    height: clamp(30px, 3vw, 50px);
+  & > div{
+    display: flex;
   }
 }
 
@@ -44,15 +41,14 @@
 }
 
 .link {
-  text-decoration: none;
-  color: $color-neutral-light;
+  color: $color-neutral-light !important;
   cursor: pointer;
   transition: 0.3s;
 
   @include font-link;
 
   &:hover {
-    color: $color-primary;
+    color: $color-primary !important;
   }
 }
 

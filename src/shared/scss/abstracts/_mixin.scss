@@ -5,12 +5,18 @@
 }
 
 @mixin desktop-m() {
-  @media (max-width: 1150px) {
+  @media (max-width: 1250px) {
     @content;
   }
 }
 
 @mixin desktop-s() {
+  @media (max-width: 950px) {
+    @content;
+  }
+}
+
+@mixin desktop-g() {
   @media (max-width: 800px) {
     @content;
   }
@@ -23,7 +29,13 @@
 }
 
 @mixin mobile-l() {
-  @media (max-width: 425px) {
+  @media (max-width: 450px) {
+    @content;
+  }
+}
+
+@mixin mobile-m() {
+  @media (max-width: 500px) {
     @content;
   }
 }
